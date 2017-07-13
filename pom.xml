@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.cnit.dlp</groupId>
+    <artifactId>big-data-example</artifactId>
+    <version>1.0-SNAPSHOT</version>
+
+    <name>big-data-example</name>
+    <packaging>jar</packaging>
+
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <kafka.version>0.10.0.0</kafka.version>
+        <es.version>5.2.1</es.version>
+        <!--<flume.vsersion></flume.vsersion>
+        <spark.version></spark.version>-->
+    </properties>
+
+    <profiles>
+        <profile>
+            <id>java8-doclint-disabled</id>
+            <activation>
+                <jdk>[1.8,)</jdk>
+            </activation>
+            <properties>
+                <javadoc.opts>-Xdoclint:none</javadoc.opts>
+            </properties>
+        </profile>
+    </profiles>
+
+    <dependencies>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-lang3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-lang3</artifactId>
+            <version>3.5</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/com.alibaba/fastjson -->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>fastjson</artifactId>
+            <version>1.2.31</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.httpcomponents/httpclient -->
+        <dependency>
+            <groupId>org.apache.httpcomponents</groupId>
+            <artifactId>httpclient</artifactId>
+            <version>4.5.2</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.flume/flume-ng-sdk -->
+        <dependency>
+            <groupId>org.apache.flume</groupId>
+            <artifactId>flume-ng-sdk</artifactId>
+            <version>1.7.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/commons-daemon/commons-daemon -->
+        <dependency>
+            <groupId>commons-daemon</groupId>
+            <artifactId>commons-daemon</artifactId>
+            <version>1.0.15</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
+        <dependency>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>42.0.0</version>
+        </dependency>
+
+        <!--hadoop-->
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-common</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-client</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-auth</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.hadoop</groupId>
+            <artifactId>hadoop-hdfs</artifactId>
+            <version>2.6.0</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.twitter/bijection-avro_2.10 -->
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>bijection-avro_2.10</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/com.twitter/bijection-core_2.10 -->
+        <dependency>
+            <groupId>com.twitter</groupId>
+            <artifactId>bijection-core_2.10</artifactId>
+            <version>0.9.2</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.apache.kafka/connect-api -->
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>connect-api</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/transport -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>transport</artifactId>
+            <version>${es.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch.client/rest -->
+        <dependency>
+            <groupId>org.elasticsearch.client</groupId>
+            <artifactId>rest</artifactId>
+            <version>${es.version}</version>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/org.elasticsearch/elasticsearch -->
+        <dependency>
+            <groupId>org.elasticsearch</groupId>
+            <artifactId>elasticsearch</artifactId>
+            <version>${es.version}</version>
+        </dependency>
+
+        <dependency>
+            <groupId>org.apache.kafka</groupId>
+            <artifactId>kafka-clients</artifactId>
+            <version>${kafka.version}</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.avro/avro -->
+        <dependency>
+            <groupId>org.apache.avro</groupId>
+            <artifactId>avro</artifactId>
+            <version>1.8.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-api</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.8.2</version>
+        </dependency>
+
+
+        <!-- https://mvnrepository.com/artifact/log4j/log4j -->
+        <dependency>
+            <groupId>log4j</groupId>
+            <artifactId>log4j</artifactId>
+            <version>1.2.17</version>
+        </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.commons/commons-math3 -->
+        <dependency>
+            <groupId>org.apache.commons</groupId>
+            <artifactId>commons-math3</artifactId>
+            <version>3.6.1</version>
+        </dependency>
+
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>4.12</version>
+            <scope>test</scope>
+        </dependency>
+    </dependencies>
+    <build>
+        <sourceDirectory>src/main/java</sourceDirectory>
+        <resources>
+            <!-- 把src/main/resources目录下所有的文件拷贝到conf目录中 -->
+            <resource>
+                <directory>src/main/resources</directory>
+                <targetPath>${project.build.directory}/conf</targetPath>
+            </resource>
+            <!-- 把lib目录下所有的文件拷贝到lib目录中
+           （可能有些jar包没有办法在maven中找到，需要放在lib目录中） -->
+            <resource>
+                <directory>lib</directory>
+                <targetPath>${project.build.directory}/lib</targetPath>
+            </resource>
+            <!-- 把放在根目录下的脚本文件.sh,.bat拷贝到bin目录中 -->
+            <resource>
+                <directory>.</directory>
+                <includes>
+                    <include>**/*.sh</include>
+                    <include>**/*.bat</include>
+                </includes>
+                <targetPath>${project.build.directory}/bin</targetPath>
+            </resource>
+        </resources>
+        <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <configuration>
+                    <source>1.8</source>
+                    <target>1.8</target>
+                </configuration>
+            </plugin>
+
+            <!-- 用于生成jar包的plugin -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.0.2</version>
+                <configuration>
+                    <!-- 把生成的jar包放在lib目录下（和其他所有jar包一起） -->
+                    <outputDirectory>${project.build.directory}/lib</outputDirectory>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <classpathPrefix>lib/</classpathPrefix>
+                        </manifest>
+                    </archive>
+                    <excludes>
+                        <!-- 排除掉一些文件,不要放到jar包中，
+                        这里是为了排除掉src/main/resources中的文件（它们应该放到conf目录）
+                        这里只能指定要排除的目标文件，而不能指定源文件，虽然不够完美，但是基本能达到目的。 -->
+                        <exclude>*.xml</exclude>
+                        <exclude>*.properties</exclude>
+                    </excludes>
+                </configuration>
+            </plugin>
+
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <version>2.9</version>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                        <configuration>
+                            <additionalparam>${javadoc.opts}</additionalparam>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-site-plugin</artifactId>
+                <version>3.3</version>
+                <!--<configuration>
+                    <reportPlugins>&lt;!&ndash; not supported any more... (now kept internal) &ndash;&gt;
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-project-info-reports-plugin</artifactId>
+                            <version>2.4</version>
+                            <configuration>
+                                <dependencyDetailsEnabled>false</dependencyDetailsEnabled>
+                                <dependencyLocationsEnabled>false</dependencyLocationsEnabled>
+                            </configuration>
+                            &lt;!&ndash; simpler configuration without reportSets available for usual cases &ndash;&gt;
+                            <reports>
+                                <report>dependencies</report>
+                                <report>scm</report>
+                            </reports>
+                        </plugin>
+                        <plugin>
+                            <groupId>org.apache.maven.plugins</groupId>
+                            <artifactId>maven-javadoc-plugin</artifactId>
+                            <version>2.8</version>
+                        </plugin>
+                    </reportPlugins>
+                </configuration>-->
+            </plugin>
+        </plugins>
+        <finalName>${project.name}</finalName>
+    </build>
+</project>

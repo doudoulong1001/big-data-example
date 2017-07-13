@@ -1,0 +1,278 @@
+{
+	"namespace": "org.apache.flume.serialization",
+	"type": "record",
+	"name": "DlpAccident",
+	"fields": [{
+			"name": "type",
+			"type": ["null", "int"]
+		}, {
+			"name": "appProtocal",
+			"type": ["null", "string"]
+		}, {
+			"name": "bytesIn",
+			"type": ["null", "int"]
+		}, {
+			"name": "bytesOut",
+			"type": ["null", "int"]
+		}, {
+			"name": "count",
+			"type": ["null", "int"]
+		}, {
+			"name": "originExtId",
+			"type": ["null", "string"]
+		}, {
+			"name": "outCome",
+			"type": ["null", "string"]
+		}, {
+			"name": "proto",
+			"type": ["null", "string"]
+		}, {
+			"name": "reason",
+			"type": ["null", "string"]
+		}, {
+			"name": "reqCliApp",
+			"type": ["null", "string"]
+		}, {
+			"name": "reqContext",
+			"type": ["null", "string"]
+		}, {
+			"name": "reqCookies",
+			"type": ["null", "string"]
+		}, {
+			"name": "reqMethod",
+			"type": ["null", "string"]
+		}, {
+			"name": "reqUrl",
+			"type": ["null", "string"]
+
+		}, {
+			"name": "startTime",
+			"type": ["null", "long"]
+		}, {
+			"name": "endTime",
+			"type": ["null", "long"]
+		}, {
+			"name": "receiptTime",
+			"type": ["null", "long"]
+		}, {
+			"name": "action",
+			"type": ["null", "string"]
+		}, {
+			"name": "address",
+			"type": ["null", "string"]
+		}, {
+			"name": "direction",
+			"type": ["null", "int"]
+		}, {
+			"name": "dnsDomain",
+			"type": ["null", "string"]
+		}, {
+			"name": "extId",
+			"type": ["null", "string"]
+		}, {
+			"name": "facility",
+			"type": ["null", "string"]
+		}, {
+			"name": "hostName",
+			"type": ["null", "string"]
+		}, {
+			"name": "inputInterf",
+			"type": ["null", "string"]
+		}, {
+			"name": "outInterf",
+			"type": ["null", "string"]
+		}, {
+			"name": "mac",
+			"type": ["null", "string"]
+		}, {
+			"name": "ntDomain",
+			"type": ["null", "string"]
+		}, {
+			"name": "payloadId",
+			"type": ["null", "string"]
+		}, {
+			"name": "processId",
+			"type": ["null", "int"]
+		}, {
+			"name": "procName",
+			"type": ["null", "string"]
+		}, {
+			"name": "timeZone",
+			"type": ["null", "string"]
+		}, {
+			"name": "transAddress",
+			"type": ["null", "string"]
+		}, {
+			"name": "c6a1",
+			"type": ["null", "string"]
+		}, {
+			"name": "c6aL1",
+			"type": ["null", "string"]
+		}, {
+			"name": "cD1",
+			"type": ["null", "long"]
+		}, {
+			"name": "cDL1",
+			"type": ["null", "string"]
+		}, {
+			"name": "cF1",
+			"type": ["null", "float"]
+		}, {
+			"name": "cFL1",
+			"type": ["null", "string"]
+		}, {
+			"name": "cN1",
+			"type": ["null", "long"]
+		}, {
+			"name": "cNL1",
+			"type": ["null", "string"]
+		}, {
+			"name": "cS1",
+			"type": ["null", "string"]
+		}, {
+			"name": "cSL1",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcAddress",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcDnsDomain",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcHostName",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcMac",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcNtDomain",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcPort",
+			"type": ["null", "int"]
+		}, {
+			"name": "srcProcessId",
+			"type": ["null", "int"]
+		}, {
+			"name": "srcProcName",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcServiceName",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcTranslatedAddress",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcTranslatedPort",
+			"type": ["null", "int"]
+		}, {
+			"name": "srcUserId",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcUserName",
+			"type": ["null", "string"]
+		}, {
+			"name": "srcUserPriv",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstAddress",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstDnsDomain",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstHostName",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstMac",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstNtDomain",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstPId",
+			"type": ["null", "int"]
+		}, {
+			"name": "dstPort",
+			"type": ["null", "int"]
+		}, {
+			"name": "dstProcName",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstServiceName",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstTransAddress",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstTransPort",
+			"type": ["null", "int"]
+		}, {
+			"name": "dstUserId",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstUserName",
+			"type": ["null", "string"]
+		}, {
+			"name": "dstUserPriv",
+			"type": ["null", "string"]
+		}, {
+			"name": "fileCreateTime",
+			"type": ["null", "long"]
+		}, {
+			"name": "fileHash",
+			"type": ["null", "string"]
+		}, {
+			"name": "fileld",
+			"type": ["null", "string"]
+		}, {
+			"name": "fileModiTime",
+			"type": ["null", "long"]
+		}, {
+			"name": "fileName",
+			"type": ["null", "string"]
+		}, {
+			"name": "filePath",
+			"type": ["null", "string"]
+		}, {
+			"name": "filePermission",
+			"type": ["null", "string"]
+		}, {
+			"name": "fileSize",
+			"type": ["null", "long"]
+		}, {
+			"name": "fileType",
+			"type": ["null", "string"]
+		}, {
+			"name": "msg",
+			"type": ["null", "string"]
+		}, {
+			"name": "oldFileCreateTime",
+			"type": ["null", "long"]
+		}, {
+			"name": "oldFileHash",
+			"type": ["null", "string"]
+		}, {
+			"name": "oldFileId",
+			"type": ["null", "string"]
+		}, {
+			"name": "oldfileModiTime",
+			"type": ["null", "long"]
+		}, {
+			"name": "oldfilePermi",
+			"type": ["null", "string"]
+		}, {
+			"name": "oldfileType",
+			"type": ["null", "string"]
+		}, {
+			"name": "fD",
+			"type": ["null", "long"]
+		}, {
+			"name": "fN",
+			"type": ["null", "long"]
+		}, {
+			"name": "fS",
+			"type": ["null", "string"]
+		}
+	]
+}
